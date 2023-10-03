@@ -1,7 +1,13 @@
 package com.amigoscode;
 
-public record CustomerServices() {
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
+@Service
+@AllArgsConstructor
+public class CustomerServices {
+
+    private final CustomerRepository customerRepository;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
 
@@ -10,8 +16,10 @@ public record CustomerServices() {
                 .lastName(request.lastName())
                 .email(request.email())
                 .build();
+
+        customerRepository.save(customer);
         //todo:check if email is valid
         //todo: check if the email is not taken
-        //todo: store customer in db
+
     }
 }
