@@ -10,9 +10,11 @@
     <packaging>pom</packaging>
 
 
-    <!-- it create automatically-->
+    <!-- it creates automatically-->
+
     <modules>
         <module>customer</module>
+        <module>fraud</module>
     </modules>
 
 

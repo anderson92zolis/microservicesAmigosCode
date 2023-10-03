@@ -1,0 +1,6 @@
+server:
+  port: 8081   # HTTP (Tomcat) port
+# Spring properties
+spring:
+  application:
+    name: fraud
