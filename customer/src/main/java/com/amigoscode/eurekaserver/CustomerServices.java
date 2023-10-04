@@ -24,7 +24,7 @@ public class CustomerServices {
         //todo: check if the email is not taken
         //todo: check if fraudter
         FraudCheckResponse fraudCheckResponce =
-                restTemplate.getForObject("http://localhost:8081/api/v1/fraud-check/{customerId}", FraudCheckResponse.class, customer.getId()
+                restTemplate.getForObject("http://FRAUD/api/v1/fraud-check/{customerId}", FraudCheckResponse.class, customer.getId()
         );
 
         if(fraudCheckResponce.isFraudster()){
