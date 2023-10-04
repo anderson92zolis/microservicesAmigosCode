@@ -1,4 +1,4 @@
-package com.amigoscode.fraud;
+package com.amigoscode.eurekaserver.fraud;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

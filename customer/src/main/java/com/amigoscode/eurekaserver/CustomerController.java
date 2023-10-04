@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.amigoscode.eurekaserver;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

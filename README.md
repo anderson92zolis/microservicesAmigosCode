@@ -24,3 +24,10 @@ Internal communication between Customer and Fraud Microservice
 - Controller Service and Repository
 - RestTemplate
 - Microservices HTTP Communication In Action
+
+// part 3 # Server Discovery and Load Balancer
+
+creating the Eureka server microservices and Eureka clients. 
+- config the parent project and the rest of microservices customer and fraud (pom.xml, application.yml)
+
+When building Distributed systems having a load balancer is key to any organisation. I learnd what is load balancers, load balancer algorithms, load balancer health checks and the benefits of having a load balancer.
