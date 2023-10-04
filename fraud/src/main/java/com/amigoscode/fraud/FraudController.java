@@ -1,8 +1,9 @@
-package com.amigoscode.eurekaserver.fraud;
+package com.amigoscode.fraud;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import com.amigoscode.clients.fraud.FraudCheckResponse;
 
 @RestController
 @RequestMapping(value = "api/v1/fraud-check")
@@ -13,10 +14,10 @@ public class FraudController {
     private final FraudCheckService fraudCheckService;
 
     @GetMapping(path = "{customerId}")
-    public FraudCheckResponce isFraudster(
+    public FraudCheckResponse isFraudster(
             @PathVariable("customerId") Integer customerId){
             boolean isFraudulentCustomer = fraudCheckService.isFraudulentCustomer(customerId);
             log.info("FRAUD CHECK REQUEST FOR CUSTOMER {} ",customerId);
-            return new FraudCheckResponce(isFraudulentCustomer);
+            return new FraudCheckResponse(isFraudulentCustomer);
     }
 }

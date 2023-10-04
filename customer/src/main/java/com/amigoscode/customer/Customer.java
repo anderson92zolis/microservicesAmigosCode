@@ -1,4 +1,4 @@
-package com.amigoscode.eurekaserver;
+package com.amigoscode.customer;
 
 
 import lombok.AllArgsConstructor;
