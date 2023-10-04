@@ -31,3 +31,6 @@ creating the Eureka server microservices and Eureka clients.
 - config the parent project and the rest of microservices customer and fraud (pom.xml, application.yml)
 
 When building Distributed systems having a load balancer is key to any organisation. I learnd what is load balancers, load balancer algorithms, load balancer health checks and the benefits of having a load balancer.
+
+This is a line to leanr how to create a linked pull request
+// pending add LoadBalancer example
