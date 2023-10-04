@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.amigoscode.eurekaserver;
 
 public record CustomerRegistrationRequest(
         String firstName,

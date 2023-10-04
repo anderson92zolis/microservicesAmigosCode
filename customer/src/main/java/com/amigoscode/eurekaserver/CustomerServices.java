@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.amigoscode.eurekaserver;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

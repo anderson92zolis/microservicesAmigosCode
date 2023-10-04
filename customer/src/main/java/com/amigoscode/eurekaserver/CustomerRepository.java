@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.amigoscode.eurekaserver;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

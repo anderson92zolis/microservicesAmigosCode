@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.amigoscode.eurekaserver;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
