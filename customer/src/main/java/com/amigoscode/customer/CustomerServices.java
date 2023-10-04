@@ -1,15 +1,18 @@
-package com.amigoscode.eurekaserver;
+package com.amigoscode.customer;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import com.amigoscode.clients.fraud.FraudCheckResponse;
+import com.amigoscode.clients.fraud.FraudClient;
+
 
 @Service
 @AllArgsConstructor
 public class CustomerServices {
 
     private final CustomerRepository customerRepository;
-    private final RestTemplate restTemplate;
+    private final FraudClient fraudClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
 
@@ -23,11 +26,11 @@ public class CustomerServices {
         //todo:check if email is valid
         //todo: check if the email is not taken
         //todo: check if fraudter
-        FraudCheckResponse fraudCheckResponce =
-                restTemplate.getForObject("http://FRAUD/api/v1/fraud-check/{customerId}", FraudCheckResponse.class, customer.getId()
-        );
 
-        if(fraudCheckResponce.isFraudster()){
+        FraudCheckResponse fraudCheckResponse =
+                fraudClient.isFraudster(customer.getId());
+
+        if(fraudCheckResponse.isFraudster()){
             throw new IllegalStateException("FRAUDSTER");
         }
         //todo: sendNotification

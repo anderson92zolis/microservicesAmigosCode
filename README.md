@@ -32,5 +32,6 @@ creating the Eureka server microservices and Eureka clients.
 
 When building Distributed systems having a load balancer is key to any organisation. I learnd what is load balancers, load balancer algorithms, load balancer health checks and the benefits of having a load balancer.
 
-This is a line to leanr how to create a linked pull request
-// pending add LoadBalancer example
+// part # 4    openFeign
+
+Using OpenFeign in microservices is a popular approach to simplify the process of making HTTP requests and invoking RESTful services between microservices. OpenFeign is a declarative HTTP client library that allows you to define API interfaces with annotations, making it easier to work with remote services.  you can easily integrate OpenFeign into your microservices architecture to simplify inter-service communication. OpenFeign abstracts away many of the complexities of making HTTP requests, making it a convenient choice for microservices that need to interact with each other over RESTful APIs.
