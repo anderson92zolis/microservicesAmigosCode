@@ -1,10 +1,12 @@
 # microservicesAmigosCode
+![Architecture microservice]()
 
-// part #1  parent configuration & first microservices
 
-I will give the microservices architecture overview and will build one microservice that connects to its own database running on docker.
+### Microservices Overview
 
-Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are
+This project provides a comprehensive overview of the microservices architecture and how to build microservices using various technologies, including Docker, Eureka, OpenFeign, and Zipkin.
+
+Microservices, also known as the microservice architecture, is an architectural style that structures an application as a collection of services that are:
 
 - Highly maintainable and testable
 - Loosely coupled
@@ -12,26 +14,39 @@ Microservices - also known as the microservice architecture - is an architectura
 - Organized around business capabilities
 - Owned by a small team
 
-The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications. It also enables an organisation to evolve its technology stack.
+The microservice architecture enables the rapid, frequent, and reliable delivery of large, complex applications. It also allows an organization to evolve its technology stack.
 
+## Part 1: Parent Configuration & First Microservice
 
-// part #2   HTTP Communication 
+- Microservices architecture overview
+- Building a microservice that connects to its own database running on Docker.
 
-Internal communication between Customer and Fraud Microservice
+## Part 2: HTTP Communication
 
-- Fraud Microservice
+This part covers internal communication between the Customer and Fraud Microservice.
+
+- Setting up the Fraud Microservice, Internal communication between Customer and Fraud Microservices
 - Database Setup
 - Controller Service and Repository
-- RestTemplate
-- Microservices HTTP Communication In Action
+- Using RestTemplate
+- Microservices HTTP Communication in Action
 
-// part 3 # Server Discovery and Load Balancer
+## Part 3: Server Discovery and Load Balancer
 
-creating the Eureka server microservices and Eureka clients. 
-- config the parent project and the rest of microservices customer and fraud (pom.xml, application.yml)
+Here, we will create the Eureka server microservices and Eureka clients.
 
-When building Distributed systems having a load balancer is key to any organisation. I learnd what is load balancers, load balancer algorithms, load balancer health checks and the benefits of having a load balancer.
+- Configuration for the parent project and the rest of the microservices (pom.xml, application.yml)
 
-// part # 4    openFeign
+When building distributed systems, having a load balancer is crucial for any organization. We will learn about load balancers, load balancer algorithms, load balancer health checks, and the benefits of having a load balancer.
 
-Using OpenFeign in microservices is a popular approach to simplify the process of making HTTP requests and invoking RESTful services between microservices. OpenFeign is a declarative HTTP client library that allows you to define API interfaces with annotations, making it easier to work with remote services.  you can easily integrate OpenFeign into your microservices architecture to simplify inter-service communication. OpenFeign abstracts away many of the complexities of making HTTP requests, making it a convenient choice for microservices that need to interact with each other over RESTful APIs.
+## Part 4: OpenFeign
+
+Utilizing OpenFeign in microservices simplifies the process of making HTTP requests and invoking RESTful services between microservices. OpenFeign is a declarative HTTP client library that allows you to define API interfaces with annotations, making it easier to work with remote services. You can easily integrate OpenFeign into your microservices architecture to simplify inter-service communication. It abstracts many complexities of making HTTP requests, making it a convenient choice for microservices that need to interact with each other over RESTful APIs.
+
+## Part 5: Notification
+
+These microservices often need to communicate with each other to exchange information or trigger actions. A notification service can facilitate this communication by sending notifications or messages between microservices.
+
+## Part 6: Zipkin
+
+Zipkin is a distributed tracing system used for monitoring and troubleshooting microservices-based architectures. It helps you track and visualize the flow of requests as they traverse through multiple services within a complex application. 
