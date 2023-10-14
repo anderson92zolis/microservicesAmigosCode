@@ -50,3 +50,7 @@ These microservices often need to communicate with each other to exchange inform
 ## Part 6: Zipkin
 
 Zipkin is a distributed tracing system used for monitoring and troubleshooting microservices-based architectures. It helps you track and visualize the flow of requests as they traverse through multiple services within a complex application. 
+
+## Part 7: ApiGateway
+
+Is a critical component in a microservices architecture. It serves as a reverse proxy to accept all application programming interface (API) calls, aggregate the different services required to fulfill them, and return the appropriate result
