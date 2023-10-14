@@ -1,5 +1,5 @@
 # microservicesAmigosCode
-![Architecture microservice]()
+![Architecture microservice](https://github.com/anderson92zolis/microservicesAmigosCode/blob/Sleuth_Zipkin/microserviceArchitecture.png)
 
 
 ### Microservices Overview
